@@ -1,0 +1,12 @@
+create bucket
+curl --location --request POST 'http://localhost:8080/bucket/createBucket?bucketName=sampletest051224'
+
+get All Buckets:
+
+curl --location 'http://localhost:8080/bucket'
+
+put object into bucket:
+curl --location --request POST 'http://localhost:8080/bucket/uploadObj?bucketName=sampletest051224&objName=uploadfile'
+
+Download object:
+curl --location 'http://localhost:8080/bucket/downloadObj?bucketName=sampletest051224&objName=uploadfile'
